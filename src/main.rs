@@ -1,3 +1,6 @@
+//! TanakhCC Website README TODO
+
+mod static_router;
 
 #[cfg(feature = "ssr")]
 #[tokio::main]
@@ -20,7 +23,8 @@ async fn main() {
             move || shell(leptos_options.clone())
         })
         .fallback(leptos_axum::file_and_error_handler(shell))
-        .with_state(leptos_options);
+        .with_state(leptos_options)
+        .merge(static_router::image_dir_router());
 
     // run our app with hyper
     // `axum::Server` is a re-export of `hyper::Server`

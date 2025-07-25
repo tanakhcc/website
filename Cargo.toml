@@ -15,6 +15,7 @@ leptos_axum = { version = "0.8.0", optional = true }
 leptos_meta = { version = "0.8.0" }
 tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
 wasm-bindgen = { version = "=0.2.100", optional = true }
+tower-http = { version = "0.6.6", optional = true }
 
 [features]
 hydrate = [
@@ -29,6 +30,7 @@ ssr = [
     "leptos/ssr",
     "leptos_meta/ssr",
     "leptos_router/ssr",
+    "dep:tower-http",
 ]
 
 # Defines a size-optimized profile for the WASM bundle in release mode
