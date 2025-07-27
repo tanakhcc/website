@@ -9,6 +9,7 @@ use leptos_router::{
 
 mod get_involved;
 mod homepage;
+mod legalese;
 mod read;
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
@@ -32,7 +33,7 @@ pub fn shell(options: LeptosOptions) -> impl IntoView {
 #[component]
 pub fn Header() -> impl IntoView {
     view! {
-        <header class="sticky top-0 z-50 w-screen bg-sand-100">
+        <header class="sticky top-0 z-50 w-full bg-sand-100">
             <nav class="relative h-14 py-2 border-b border-sand-800">
                 <ul>
                     <div class="absolute left-2">
@@ -137,6 +138,8 @@ pub fn App() -> impl IntoView {
                     <Route path=StaticSegment("") view=HomePage />
                     <Route path=StaticSegment("/get-involved") view=GetInvolved />
                     <Route path=StaticSegment("/read") view=read::Read />
+                    <Route path=StaticSegment("/impressum") view=legalese::Impressum />
+                    <Route path=StaticSegment("/datenschutz") view=legalese::Datenschutz/>
                 </Routes>
             </main>
         </Router>
