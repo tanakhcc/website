@@ -75,7 +75,7 @@ pub fn Header() -> impl IntoView {
                         <li>
                             <a
                                 class="m-1 rounded-lg border-sand-800 p-1 text-xl font-semibold text-sand-800 hover:bg-sand-700 hover:text-sand-100 focus:bg-sand-700 focus:text-sand-100"
-                                href="https://gitlab.tanakhcc.org/tanakhcc/critical-edition"
+                                href="https://github.com/tanakhcc/transcription"
                             >
                                 Get the Data
                             </a>
@@ -126,7 +126,7 @@ pub fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/tanakhcc-website.css" />
 
         // sets the document title
-        <Title text="Welcome to Leptos" />
+        <Title text="TanakhCC" />
 
         <Header />
 
@@ -136,6 +136,7 @@ pub fn App() -> impl IntoView {
                 <Routes fallback=|| "Page not found.".into_view()>
                     <Route path=StaticSegment("") view=HomePage />
                     <Route path=StaticSegment("/get-involved") view=GetInvolved />
+                    <Route path=StaticSegment("/read") view=read::Read />
                 </Routes>
             </main>
         </Router>

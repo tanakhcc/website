@@ -71,7 +71,7 @@ pub fn HomePage() -> impl IntoView {
                     " The volunteers working on TanakhCC provide high quality and transparently reviewed digitizations of the different manuscripts in which the Hebrew Bible is recorded."
                     "You may use "
                     <a
-                        href="https://gitlab.tanakhcc.org/tanakhcc/critical-edition/transcriptions"
+                        href="https://github.com/tanakhcc/transcription"
                         class="underline decoration-sand-700 decoration-2"
                     >
                         "this data"

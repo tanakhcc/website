@@ -85,7 +85,7 @@ pub fn GetInvolved() -> impl IntoView {
                 </li>
                 <li class="rounded-3xl bg-sand-700 p-6 text-lg">
                     <h2 class="text-center text-4xl">Develop</h2>
-                    <div class="flex justify-center translate-x-8">
+                    <div class="flex justify-center">
                         <a href="https://www.rust-lang.org/" class="m-1 size-28">
                             <img src="/static/logo/rust.svg" />
                         </a>
@@ -96,21 +96,17 @@ pub fn GetInvolved() -> impl IntoView {
                             <img src="/static/logo/ansible.svg" />
                         </a>
 
-                        <a href="https://about.gitlab.com/" class="size-44 -translate-8">
-                            <img src="/static/logo/gitlab.svg" />
-                        </a>
-
-                        <a href="https://www.postgresql.org/" class="size-28 m-1 -translate-x-18">
+                        <a href="https://www.postgresql.org/" class="size-28 m-1">
                             <img src="/static/logo/postgres.svg" />
                         </a>
                     </div>
-                    <p class="-translate-y-4">
+                    <p>
                         "You know any of the above tools, and would like to help fix bugs and improve the software at the core of TanakhCC? Head over to "
                         <a
-                            href="https://gitlab.tanakhcc.org/explore"
+                            href="https://github.com/tanakhcc"
                             class="underline decoration-sand-100 decoration-2"
                         >
-                            our gitlab
+                            our github page
                         </a>
                         ", where you will find every line of code required to run TanakhCC, or get in touch at "
                         <a
