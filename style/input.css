@@ -26,3 +26,7 @@
   --color-sand-900: #171303;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/Inter-VariableFont_opsz,wght.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
