@@ -13,19 +13,6 @@
     }
 }
 
-@theme {
-  --color-sand-50: #f5f4ef;
-  --color-sand-100: #f7ebba;
-  --color-sand-200: #f2de8c;
-  --color-sand-300: #edd15e;
-  --color-sand-400: #e8c330;
-  --color-sand-500: #cfaa17;
-  --color-sand-600: #a18412;
-  --color-sand-700: #735e0d;
-  --color-sand-800: #453908;
-  --color-sand-900: #171303;
-}
-
 @font-face {
     font-family: 'Inter';
     src: url('/static/Inter-VariableFont_opsz,wght.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
